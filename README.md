@@ -1,3 +1,3 @@
 # Ophthalytics
 
-Live demo
+Live demo - https://valavb.github.io/Ophthalytics/
