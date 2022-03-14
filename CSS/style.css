@@ -1,0 +1,231 @@
+/* Applying border-box to all element */
+html {
+    box-sizing: border-box;
+}
+
+/* inherit border-box on all elements in the universe and before and after */
+*,*:before,*:after{
+    box-sizing: inherit;
+}  
+
+/* common css */
+.button-bg{
+    background-color: #F0992A;
+}
+
+.button-bg-2{
+    background-color: #FDE5C6!important;
+}
+
+.common-bg{
+    background-color: #E8E8E7;
+}
+
+.table-bg{
+    background-color: #F4F4F4!important;
+}
+
+body{
+    background: linear-gradient(to right, rgb(242, 186, 114) 0%, rgb(237, 215, 188) 40%, rgb(234, 230, 224) 80%, rgb(237, 215, 186) 100%);
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+
+/* Styling Logo */
+#logo img{
+    max-width: 10rem;
+}
+
+
+/* styling login form */
+#login-form{
+    padding: 50px;
+    background-color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #E9EFF3;
+}
+
+/* index background */
+#index-bg{
+    height: 100vh;
+    background-image: url('../Images/1.png');
+    background-repeat: no-repeat;
+    background-size: 90% 100%;
+    background-position: right ;
+}
+
+/* reset session */
+.resetSession-div{
+    text-align: right;
+}
+
+/* Styling side nav */
+#side-nav-bg{
+    background: linear-gradient(to bottom, rgb(234, 176, 66), rgb(236, 180, 67), rgb(229, 160, 59), rgb(225, 130, 53),rgb(224, 123, 53));
+}
+
+/* active-tab */
+a:hover{
+    color: #000!important;;
+}
+
+/* Styling top and bottom bar */
+
+.top-bar,.bottom-bar{
+    height: 20px;
+    width: 100%;
+    background-color: #E9EEF2;
+}
+
+/* Styling content bar */
+.content-bar{
+    height:40px;
+    background: linear-gradient(to bottom,rgb(243, 244, 244),rgb(237, 237, 238),rgb(246, 247, 247));
+}
+
+/* Styling current user */
+#current-user{
+    background-color: #E7E8E8 ;
+}
+
+/* styling company-logo */
+#company-logo{
+    width: 9rem;
+}
+
+/* Styling sub container */
+.sub-container{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/* Paggination */
+.pagination {
+    display: inline-block!important;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+  
+.pagination a.active-page {
+    background-color: #E17F35;
+    color: white;
+    border: 1px solid #E17F35;
+}
+  
+.pagination a:hover:not(.active-page){
+    background-color: #ddd;
+}
+
+/* Drag and Drop */
+.drag-area,.drag-area-2{
+  height: 300px;
+  border: 2px solid #E0E0E0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.active{
+  border: 1px solid #000;
+}
+.drag-area .icon,.drag-area-2 .icon{
+    color:#737373;
+}
+
+.drag-area header ,.drag-area-2 header{
+    color: #B7B7B7; 
+}
+
+.drag-area img,.drag-area-2 img{
+  height: 100%;
+  width: 100% ;
+  object-fit: contain;
+  
+}
+
+/* responsiveness */
+@media screen and (max-width: 767px) {
+    #index-bg{
+        background-image: none;
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1100px){
+    #index-bg{
+        background-size: 100% 100%;
+    }
+}
+@media screen and (max-width: 1200px){
+    
+
+    .drag-area,.drag-area-2{
+        height: 200px!important;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #login-form{
+        width: 90%;
+    }
+    .drag-area,.drag-area-2{
+        height: 150px!important;
+    }
+}
+
+@media screen and (max-width: 358px){
+    #login-form{
+        width: 100%;
+        padding: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 264px){
+    #login-form button{
+        width: 100%;
+    }
+    #register-user{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .drag-area,.drag-area-2{
+        height: 100px!important;
+    }
+}
+
+@media screen and (max-width: 1109px) {
+    #type{
+        font-size: 0.88rem;
+    }
+}   
+
+@media screen and (max-width: 992px) {
+    #resetSession{
+       margin-top: 25px;
+    }
+    #generateReport{
+        margin-top: 15px;
+    }
+    .resetSession-div{
+        text-align: left!important;
+    }
+    
+}
